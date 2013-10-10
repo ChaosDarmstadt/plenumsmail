@@ -22,8 +22,10 @@ mailserver = config.get("mailserver","server")
 mailsender = config.get("plenumsmail", "sender")
 mailreceiver = config.get("plenumsmail", "receiver") 
 mail_reply_receiver = config.get("plenumsmail", "reply_receiver")
-invite_text = config.get("plenumsmail", "invite")
+invite_file_name = config.get("plenumsmail", "invite_file")
 
+with open(invite_file_name,'r') as file:
+    invite_text = file.read()
 
 
 invite_subject = config.get("plenumsmail", "subject")
