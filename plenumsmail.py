@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+
+
 #date calculations
 import datetime
 from dateutil import relativedelta
@@ -16,7 +19,7 @@ configname = "example.config"
 config = ConfigParser.ConfigParser() 
 config.read(configname)
 
-debug = config.get("default", "debug")
+debug = config.getboolean("default", "debug")
 
 mailserver = config.get("mailserver","server")
 mailsender = config.get("plenumsmail", "sender")

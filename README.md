@@ -1,5 +1,9 @@
 Release 0.9 "Thank you for travelling with Deutsche Bahn"
 
+Requirements
+
+ * dateutils
+
 ## To run, add a daily cronjob:
 ## you can also select the desired day the reminder will be send out,
 ## but plenumsmail will also check for the correct day
